@@ -4,6 +4,7 @@
   "description": "API de Node JS",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: nenhum teste especificado!\" && exit 1"
   },
   "keywords": [],
