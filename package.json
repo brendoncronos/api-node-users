@@ -1,0 +1,17 @@
+{
+  "name": "api-node-users",
+  "version": "1.0.0",
+  "description": "API de Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: nenhum teste especificado!\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
