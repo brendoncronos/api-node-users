@@ -48,6 +48,19 @@ app.get('/users', (req, res) => {
 });
 
 // Obter um usuário por ID
+app.put('/users/:id', (req, res) => {
+    const userId = req.params.id;
+    const { name, email } = req.body;
+
+    const UPDATE_USER_QUERY = `UPDATE  users set name =?, email=? WHERE id = ?`;
+  
+      connection.query(UPDATE_USER_QUERY,  [name,email,userId],(err, results) => {
+          if (err) throw err;
+          
+          res.send('USUÁRIO ATUALIZADO COM SUCESSO');
+      });
+  });
+  
 app.get('/users/:id', (req, res) => {
   const userId = req.params.id;
 
